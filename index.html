@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mrinal Kumar | Personal Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298,#6a11cb);
+    color:white;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* Header */
+header{
+    min-height:75vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.profile{
+    max-width:700px;
+}
+
+.profile img{
+    width:190px;
+    height:190px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    box-shadow:0 0 25px rgba(255,255,255,0.7);
+    margin-bottom:20px;
+}
+
+.profile h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.profile h1 span{
+    color:#00e5ff;
+}
+
+.profile p{
+    color:#e0e0e0;
+    font-size:18px;
+}
+
+.tag{
+    margin-top:12px;
+    color:#00e5ff;
+    font-size:20px;
+}
+
+.instagram{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 28px;
+    background:white;
+    color:#111;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.instagram:hover{
+    transform:scale(1.05);
+}
+
+.scroll-down{
+    display:block;
+    text-decoration:none;
+    font-size:100px;
+    color:white;
+    margin-top:10px;
+    animation:bounce 1.5s infinite;
+}
+
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform:translateY(0);
+    }
+    40%{
+        transform:translateY(10px);
+    }
+    60%{
+        transform:translateY(5px);
+    }
+}
+
+/* Sections */
+section{
+    padding:20px 15px;
+}
+
+.box{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(10px);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:15px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+h2{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#00e5ff;
+}
+
+.box p{
+    color:#f1f1f1;
+}
+
+/* Education */
+.education{
+    display:grid;
+    gap:15px;
+}
+
+.education-card{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    border-radius:15px;
+    border-left:4px solid #00e5ff;
+}
+
+.education-card p{
+    color:#e0e0e0;
+}
+
+/* Hobby */
+.hobbies{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.hobby{
+    background:rgba(255,255,255,0.15);
+    padding:12px 20px;
+    border-radius:25px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,0.2);
+}
+
+@media(max-width:600px){
+
+.profile h1{
+    font-size:35px;
+}
+
+.profile img{
+    width:160px;
+    height:160px;
+}
+
+.scroll-down{
+    font-size:80px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="profile">
+
+<img src="mrinal.jpg" alt="Mrinal Kumar">
+
+<h1>Hi, I'm <span>Mrinal Kumar</span> 👋</h1>
+
+<p>Student | Future Software Engineer | Cricket Lover</p>
+
+<div class="tag">
+Dream • Learn • Build 🚀
+</div>
+
+<a class="instagram"
+href="https://www.instagram.com/mrinaall___/"
+target="_blank">
+Follow me on Instagram
+</a>
+
+<a href="#about" class="scroll-down">↓</a>
+
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+
+<div class="box">
+<h2>About Me</h2>
+
+<p>
+Hello! My name is Mrinal Kumar.
+I am currently studying in Class 11 at
+Rajkam Saraswati Vidya Mandir, Dhanbad.
+</p>
+
+<br>
+
+<p>
+I completed my Class 10 education from
+Indian School of Learning, Sudamdih,
+and scored 70% in my board examinations.
+</p>
+
+<br>
+
+<p>
+I am from Chandankiyari, Bokaro, Jharkhand.
+I am passionate about learning new things
+and improving myself every day.
+</p>
+</div>
+
+<div class="box">
+<h2>My Education 🎓</h2>
+
+<div class="education">
+
+<div class="education-card">
+<h3>Class 10 — CBSE</h3>
+<p>Indian School of Learning, Sudamdih</p>
+<p>Board Result: 70%</p>
+</div>
+
+<div class="education-card">
+<h3>Class 11 — CBSE</h3>
+<p>Rajkam Saraswati Vidya Mandir, Dhanbad</p>
+<p>Currently Studying</p>
+</div>
+
+</div>
+</div>
+
+<div class="box">
+<h2>My Hobby 🏏</h2>
+
+<div class="hobbies">
+<div class="hobby">🏏 Playing Cricket</div>
+</div>
+</div>
+
+<div class="box">
+<h2>My Future Goal 🚀</h2>
+
+<p>
+My future goal is to become a Software Engineer.
+I want to learn programming, build useful
+technology and create something meaningful.
+</p>
+</div>
+
+<div class="box">
+<h2>Where I'm From 📍</h2>
+
+<p>
+Chandankiyari, Bokaro, Jharkhand, India
+</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Mrinal Kumar. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
